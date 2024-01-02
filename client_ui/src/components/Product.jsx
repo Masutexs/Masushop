@@ -24,7 +24,7 @@ const Info = styled.div`
 
 const Container = styled.div`
 	flex: 1;
-	margin: 30px 5px 5px 5px;
+	margin: 5px;
 	min-width: 280px;
 	height: 350px;
 	display: flex;

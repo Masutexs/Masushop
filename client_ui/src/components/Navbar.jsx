@@ -13,7 +13,7 @@ const Wrapper = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	${mobile({ padding: '10px 0px' })}
+	${mobile({ padding: '8px 0px' })}
 `;
 
 const Left = styled.div`
@@ -35,23 +35,24 @@ const SearchContainer = styled.div`
 	align-items: center;
 	margin-left: 25px;
 	padding: 5px;
+	${mobile({ padding: '2px' })}
 `;
 
 const Input = styled.input`
 	border: none;
-	${mobile({ width: '40px' })}
+	${mobile({ width: '80px' })}
 `;
 
 const Logo = styled.h1`
 	font-weight: bold;
-	${mobile({ fontSize: '20px' })}
+	${mobile({ fontSize: '18px' })}
 	${desktop({ fontSize: '40px' })}
 `;
 
 const Center = styled.div`
 	flex: 1;
 	text-align: center;
-	${mobile({ marginLeft: '10px', flex: 2, justifyContent: 'center' })}
+	${mobile({ marginLeft: '10px', flex: 2 })}
 `;
 const Right = styled.div`
 	flex: 1;
@@ -71,10 +72,11 @@ const MenuItem = styled.div`
 `;
 
 const Cart = styled.div`
-	font-size: 14px;
+	font-size: 10px;
 	font-weight: 600;
 	cursor: pointer;
 	margin-left: 25px;
+	${mobile({ marginRight: '18px' })}
 `;
 
 const Navbar = () => {

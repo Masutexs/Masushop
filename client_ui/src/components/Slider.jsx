@@ -62,19 +62,16 @@ const ImgContainer = styled.div`
 		justifyContent: 'center',
 		alignItems: 'center',
 	})}
-	${laptop({
-		height: '100%',
-		flex: 1,
-	})}
+	${laptop({ height: '100%', flex: 1 })}
+	${desktop({ height: '80%', marginRight: '20px' })}
 `;
 
 const Image = styled.img`
 	height: 90%;
 	${mobile({ height: '100%' })}
-	${tablet({
-		height: '70%',
-	})}
+	${tablet({ height: '70%' })}
 	${laptop({ height: '90%' })}
+	${desktop({ height: '80%' })}
 `;
 
 const InfoContainer = styled.div`

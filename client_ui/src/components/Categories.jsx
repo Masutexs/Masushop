@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { categories } from '../data';
-import { mobile } from '../responsive';
+import { desktop, mobile, tablet } from '../responsive';
 
 const Container = styled.div`
 	${mobile({ padding: '0px', flexDirection: 'column' })};
@@ -8,7 +8,7 @@ const Container = styled.div`
 
 const Wrapper = styled.div`
 	flex: 1;
-	margin: 3px;
+	margin: 5px;
 	height: 70vh;
 	position: relative;
 `;
@@ -16,7 +16,7 @@ const Image = styled.img`
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	${mobile({ height: '50vh' })}
+	${mobile({ height: '60vh' })}
 `;
 const Info = styled.div`
 	position: absolute;
@@ -33,7 +33,10 @@ const Info = styled.div`
 const Title = styled.h1`
 	color: #082541;
 	margin-bottom: 20px;
-	${mobile({ height: '50vh' })}
+	font-weight: 900;
+	${mobile({ fontSize: '24px' })}
+	${tablet({ fontSize: '22px' })}
+	${desktop({ fontSize: '50px' })}
 `;
 
 const Button = styled.button`
@@ -44,6 +47,7 @@ const Button = styled.button`
 	cursor: pointer;
 	font-weight: 600;
 	transition: opacity 0.5s ease;
+	${desktop({ fontSize: '30px' })}
 	&:hover {
 		opacity: 0.7;
 	}
@@ -66,7 +70,7 @@ const Categories = () => {
 				display: 'flex',
 				paddin: 20,
 				justifyContent: 'space-between',
-				textWrap: 'balance',
+				//textWrap: 'balance',
 			}}>
 			{categories.map((categories) => (
 				<CategoriesItem

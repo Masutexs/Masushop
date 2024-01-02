@@ -9,9 +9,13 @@ import {
 	Twitter,
 	WhatsApp,
 } from '@mui/icons-material';
+import { mobile } from '../responsive';
 
 const Container = styled.div`
 	display: flex;
+	text-wrap: balance;
+	margin: 10px 0px;
+	${mobile({ flexDirection: 'column' })}
 `;
 const Left = styled.div`
 	flex: 1;
@@ -44,6 +48,7 @@ const SocailIcon = styled.div`
 const Center = styled.div`
 	flex: 1;
 	padding: 20px;
+	${mobile({ display: 'none' })}
 `;
 
 const Title = styled.h3`

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { mobile } from '../responsive';
 
 const Container = styled.div`
 	width: 100vw;
@@ -10,40 +11,38 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
-	width: 40%;
+	width: 25%;
 	background: transparent;
 	border: 2px solid rgb(145, 126, 5);
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 	border-radius: 10px;
-	// backdrop-filter: blur(15px);
-	padding: 20px;
+	padding: 30px 40px;
+	${mobile({ width: '75%' })}
 `;
 
 const Title = styled.h1`
-	font-size: 24px;
-	font-weight: 400;
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+	color: #dbdada;
 `;
 const Form = styled.form`
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
 `;
 
 const Input = styled.input`
 	flex: 1;
 	min-width: 40%;
-	margin: 20px 10px 0px 0px;
+	margin: 10px 0px;
 	padding: 10px;
 `;
 
-const Agreement = styled.span`
-	font-size: 14px;
-	margin: 20px 0px;
-`;
-
 const Button = styled.button`
-	width: 40%;
+	width: 100%;
 	border: none;
 	padding: 15px 20px;
+	margin: 10px 0px;
 	background-color: #695c05;
 	color: white;
 	cursor: pointer;
@@ -54,27 +53,39 @@ const Button = styled.button`
 	}
 `;
 
-const Register = () => {
+const LinkForget = styled.a`
+	margin: 5px;
+	text-align: right;
+	font-size: 14px;
+	text-decoration: underline;
+	cursor: pointer;
+	color: #0c0a91;
+`;
+
+const Link = styled.a`
+	margin: 10px;
+	text-align: center;
+	font-size: 14px;
+	text-decoration: underline;
+	cursor: pointer;
+	color: #dbdada;
+`;
+
+const Login = () => {
 	return (
 		<Container>
 			<Wrapper>
-				<Title>CREATE AN ACCOUNT</Title>
+				<Title>Login</Title>
 				<Form>
-					<Input placeholder='Name' />
-					<Input placeholder='Last Name' />
 					<Input placeholder='Username' />
-					<Input placeholder='Email' />
 					<Input placeholder='Password' />
-					<Input placeholder='Confirm Password' />
-					<Agreement>
-						By creating an account, I consent to the processing of my personal
-						data in accordance with the <b>PRIVACY POLICY</b>
-					</Agreement>
-					<Button>CREATE</Button>
+					<LinkForget>Forget Password?</LinkForget>
+					<Button>LOGIN</Button>
+					<Link>Don't have an account? Create new account</Link>
 				</Form>
 			</Wrapper>
 		</Container>
 	);
 };
 
-export default Register;
+export default Login;

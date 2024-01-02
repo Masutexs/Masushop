@@ -2,7 +2,7 @@ import { css } from 'styled-components';
 
 const mobile = (props) => {
 	return css`
-		@media only screen and (max-width: 480px) {
+		@media (max-width: 480px) {
 			${props}
 		}
 	`;
@@ -10,7 +10,7 @@ const mobile = (props) => {
 
 const tablet = (props) => {
 	return css`
-		@media only screen and (min-width: 768px) {
+		@media (min-width: 768px) {
 			${props}
 		}
 	`;
@@ -18,7 +18,7 @@ const tablet = (props) => {
 
 const laptop = (props) => {
 	return css`
-		@media only screen and (min-width: 1024px) {
+		@media (min-width: 1024px) {
 			${props}
 		}
 	`;
@@ -26,7 +26,7 @@ const laptop = (props) => {
 
 const desktop = (props) => {
 	return css`
-		@media only screen and (min-width: 1920px) {
+		@media (min-width: 1920px) {
 			${props}
 		}
 	`;

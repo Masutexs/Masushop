@@ -10,10 +10,10 @@ import {
 	product_06,
 	product_07,
 	product_08,
-	product_09,
-	product_10,
-	product_11,
-	product_12,
+	// product_09,
+	// product_10,
+	// product_11,
+	// product_12,
 } from './assets';
 
 const sliderItems = [
@@ -61,51 +61,51 @@ const categories = [
 const products = [
 	{
 		id: 1,
-		img: product_01,
+		img: 'https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/81ZBOce1WwL._AC_SX522_.jpg',
 	},
 	{
 		id: 2,
-		img: product_02,
+		img: 'https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61vJFfzpwML._AC_SY500_.jpg',
 	},
 	{
 		id: 3,
-		img: product_03,
+		img: 'https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71kiKJpww7L._AC_UL320_.jpg',
 	},
 	{
 		id: 4,
-		img: product_04,
+		img: 'https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/51BePVaaJAL._AC_UL320_.jpg',
 	},
 	{
 		id: 5,
-		img: product_05,
+		img: 'https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/81p6UEu2GiL._AC_SY500_.jpg',
 	},
 	{
 		id: 6,
-		img: product_06,
+		img: 'https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/610SFynkO2L._AC_SY500_.jpg',
 	},
 	{
 		id: 7,
-		img: product_07,
+		img: 'https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/81FmthaCwpL._AC_UL320_.jpg',
 	},
 	{
 		id: 8,
-		img: product_08,
+		img: 'https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71EPHz3fArL._AC_UL320_.jpg',
 	},
-	{
-		id: 9,
-		img: product_09,
-	},
-	{
-		id: 10,
-		img: product_10,
-	},
-	{
-		id: 11,
-		img: product_11,
-	},
-	{
-		id: 12,
-		img: product_12,
-	},
+	// {
+	// 	id: 9,
+	// 	img: product_09,
+	// },
+	// {
+	// 	id: 10,
+	// 	img: product_10,
+	// },
+	// {
+	// 	id: 11,
+	// 	img: product_11,
+	// },
+	// {
+	// 	id: 12,
+	// 	img: product_12,
+	// },
 ];
 export { sliderItems, categories, products };
